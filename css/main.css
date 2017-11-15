@@ -47,3 +47,30 @@ margin-left: 300px;
   color: white;
   margin-top: 10px;
 }
+
+main{
+  background-color: #147aa7;
+  height: 900px;
+}
+
+.title{
+  outline: 1px solid red;
+  color: white;
+  font-size: 10px;
+  margin-left: 50px;
+}
+
+.container{
+
+}
+
+#entrada{
+  background-color: #026aa7;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 200px;
+  text-align: left;
+}
