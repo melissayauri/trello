@@ -51,6 +51,7 @@ margin-left: 300px;
 main{
   background-color: #fe8a1e;
   height: 900px;
+  outline: 1px solid red;
 }
 
 .title{
@@ -60,9 +61,12 @@ main{
   margin-left: 50px;
 }
 
-.container{
-
+#container-grande{
+  outline: 1px solid blue;
+  height: 100px;
+  background-color: red;
 }
+
 
 #entrada{
   background-color: #d76e00;
@@ -105,4 +109,12 @@ border-radius: 8px;
   border-radius: 5px;
   margin-top: 7px;
 
+}
+
+.second{
+  outline: 1px solid black;
+  width: 20%;
+  height: 60px;
+  margin-left: 20px;
+display: none;
 }
