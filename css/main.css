@@ -8,7 +8,7 @@
 header{
   text-align: center;
   height: 50px;
-  background-color: #026aa7;
+  background-color:#d76e00;
 
 }
 
@@ -21,7 +21,7 @@ header .box{
   margin-top: 10px;
   margin-left: 10px;
   font-size: 10px;
-  background-color: #4e97c2;
+  background-color: #fe8a1e;
   border-radius: 5px;
   color: white;
 
@@ -42,19 +42,19 @@ header .box{
 margin-left: 300px;
 }
 .box-icons i{
-  background-color: #4e97c2;
+  background-color: #fe8a1e;
   padding: 10px;
   color: white;
   margin-top: 10px;
 }
 
 main{
-  background-color: #147aa7;
+  background-color: #fe8a1e;
   height: 900px;
 }
 
 .title{
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
   color: white;
   font-size: 10px;
   margin-left: 50px;
@@ -65,7 +65,7 @@ main{
 }
 
 #entrada{
-  background-color: #026aa7;
+  background-color: #d76e00;
   border: none;
   padding: 10px;
   color: white;
@@ -73,4 +73,36 @@ main{
   margin-top: 10px;
   width: 200px;
   text-align: left;
+}
+
+.enter{
+  display: none;
+}
+.aparece{
+  display: inline-block;
+}
+.formul{
+display: none;
+/*outline: 1px solid blue;*/
+width: 20%;
+height: 100px;
+margin-left: 50px;
+background-color:#994C00;
+border-radius: 8px;
+}
+
+.formul input{
+  margin-top: 8px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.formul button{
+  background-color: #d76e00;
+  border: 1px solid white;
+  color:white;
+  padding: 7px;
+  border-radius: 5px;
+  margin-top: 7px;
+
 }
