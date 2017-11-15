@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header{
+  text-align: center;
+  height: 50px;
+  background-color: #026aa7;
+
+}
+
+
+header .box{
+  /*outline: 1px solid red;*/
+  height: 30px;
+  width: 10%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 10px;
+  background-color: #4e97c2;
+  border-radius: 5px;
+  color: white;
+
+}
+
+#search{
+  font-size: 15px;
+  margin-top: 8px;
+  margin-left: 100px;
+}
+
+.trello{
+  height: 30px;
+  width: 10%;
+  color:#80b4d3;
+  float: left;
+  margin-top: 10px;
+margin-left: 300px;
+}
+.box-icons i{
+  background-color: #4e97c2;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+}
