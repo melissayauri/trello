@@ -9,6 +9,7 @@ window.addEventListener('load',function(){
 var btn = document.getElementById('btn-list');
 var formulario= document.getElementById('formulario');
 var box = document.querySelector('.boxnew');
+var añadir = document.getElementById('añadir');
 
   /*llamando al evento click para añdir el formulario*/
   addList.addEventListener('click', enterForm);
@@ -36,8 +37,14 @@ btn.addEventListener('click', validation);
 function validation(){
   btn.setAttribute('id','btn-list');
   formulario.removeAttribute('id','formulario');
-}
 
+}
+añadir.addEventListener('click', newtextos);
+function newtextos(){
+var myText = document.getElementById('entrada1').value;
+var newText= document.createElement('div');
+newText.innerHTML = myText;
+box.appendChild(newText);}
 /*
    var titleBox = document.getElementById('title-box').value;
    var element = document.createElement("div");
