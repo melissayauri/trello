@@ -63,7 +63,8 @@ main{
 
 #container-grande{
   outline: 1px solid blue;
-  height: 100px;
+  height: 150px;
+  width: 60%;
   background-color: red;
 }
 
@@ -88,13 +89,23 @@ main{
 .formul{
 display: none;
 /*outline: 1px solid blue;*/
-width: 20%;
-height: 100px;
-margin-left: 50px;
-background-color:#994C00;
-border-radius: 8px;
-}
 
+}
+.formul1{
+  display: block;
+  width: 40%;
+  height: 100px;
+  margin-left: 50px;
+  background-color:blue;
+  border-radius: 8px;
+}
+.formul2{
+  float: right;
+  width: 40%;
+  height: 100px;
+  background-color:#994C00;
+  border-radius: 8px;
+}
 .formul input{
   margin-top: 8px;
   border-radius: 5px;
@@ -112,9 +123,30 @@ border-radius: 8px;
 }
 
 .second{
-  outline: 1px solid black;
-  width: 20%;
-  height: 60px;
+/*  outline: 1px solid black;*/
+  width: 30%;
+  height: 100px;
   margin-left: 20px;
-display: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: white;
+
+}
+.title2{
+
+}
+
+.cuadro{
+ border:1px solid black;
+  height: 100px;
+}
+.cuadro button{
+  border: none;
+  background-color: gray;
+  width: 100%;
+  text-align: left;
+}
+#btn{
+  color:red;
+
 }

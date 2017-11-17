@@ -1,31 +1,52 @@
 
 window.addEventListener('load',function(){
-  var button = document.getElementById('entrada');
+  var addList = document.getElementById('entrada');
   var formul = document.getElementById('formul');
-
   var saveButton = document.getElementById('save-button');
+  var container = document.getElementById('second')
 
-
-  button.addEventListener('click', enterForm);
+  /*llamando al evento click para añdir el formulario*/
+  addList.addEventListener('click', enterForm);
   function enterForm(){
     /*llamando a ocultar el primer boton*/
     /*button.style.display="none";*/
-  button.classList.add('enter');
+    addList.classList.add('enter');
   /*aparece el formulario*/
-  formul.style.display = "inline-block";
+  formul.classList.add('formul1');
   }
   saveButton.addEventListener('click', createTitle);
   function createTitle(){
-   formul.style.display = "none";
-   
+   formul.classList.toggle('formul2');
+
+   var titleBox = document.getElementById('title-box').value;
+   var element = document.createElement("div");
+   element.classList.add('title2');
+   element.innerHTML = titleBox;
+   container.style.display= "inline-block"
+   container.classList.add('second')
+   container.appendChild(element);
+   var textos = document.createElement('div');
+   textos.classList.add('cuadro');
+   container.appendChild(textos);
+   var buton2= document.createElement("button");
+   buton2.innerHTML="Añadir una tarea";
+   textos.appendChild(buton2);
+
+   /*
+   buton2.innerHTML="Añadir una tarea";
+
+
+   container.appendChild(buton2);
+   button2.classList.add('button2')*/
+/*
    var container = document.getElementById('second')
     var titleBox = document.getElementById('title-box').value;
     var element = document.createElement("div");
     console.log(element);
     element.innerHTML = titleBox;
-container.style.display= "inline-block"
+    container.style.display= "inline-block"
     container.appendChild(element);
-
+*/
 }
 
 
