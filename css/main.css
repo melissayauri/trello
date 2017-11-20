@@ -40,8 +40,8 @@ a{
 }
 
 /*icono buscar*/
-.search{
-  font-size: 15px;
+#search{
+  font-size: 20px;
   margin-top: 8px;
   margin-left: 100px;
   color: white;
@@ -100,115 +100,144 @@ main{
 .subtitle{
   /*outline: 1px solid red;*/
   color: white;
-  font-size: 10px;
   margin-left: 50px;
-  height: 50px;
+  height: 80px;
   padding-top: 10px;
-  font-size: 16px;
+  font-size: 25px;
 }
-
-#container-grande{
-  outline: 1px solid blue;
-  height: 150px;
+/*contenedor*/
+.container{
+  /*outline: 1px solid blue;*/
+  height: 600px;
   width: 60%;
-  background-color: red;
+  background-color: rgba(34,34,34,0.2);
+  margin-left: 50px;
 }
 
-
-#entrada{
+/*estilo a la entrada del texto*/
+#input-list{
   background-color: #d76e00;
   border: none;
+  border: 2px solid white;
+  border-radius: 10px;
   padding: 10px;
   color: white;
   margin-left: 50px;
   margin-top: 10px;
   width: 200px;
   text-align: left;
+  font-size: 20px;
 }
-
-.enter{
+/*estilo del boton añadir lista para que desaparezca*/ /**/
+.input-list{
   display: none;
 }
 .aparece{
   display: inline-block;
 }
+/*aplicando estilo para que el primer formulario no aparezca*/
 .formul{
 display: none;
-/*outline: 1px solid blue;*/
-
 }
+/*estilo para que el primer formulario aparezca*/
 .formul1{
   display: block;
   width: 40%;
-  height: 100px;
+  height: 120px;
   margin-left: 50px;
-  background-color:blue;
+  background-color:#e2e4e6;
   border-radius: 8px;
+  border: 5px solid #d76e00;
+  padding-left: 10px;
 }
-.formul2{
-  float: right;
-  width: 40%;
-  height: 100px;
-  background-color:#994C00;
-  border-radius: 8px;
-}
-.formul input{
+/*aplicando estilo al titulo de la lista*/
+#title-list{
+  color:black;
+  font-size: 20px;
+  font-weight: bolder;
   margin-top: 8px;
   border-radius: 5px;
   padding: 10px;
 }
-
-.formul button{
+/*estilo al botón guardar*/
+#save-button{
   background-color: #d76e00;
-  border: 1px solid white;
+  border: 3px solid white;
   color:white;
   padding: 7px;
   border-radius: 5px;
   margin-top: 7px;
-
+  font-size: 16px;
+}
+/*estilo para que el primer formulario aparezca al lado derecho*/
+.formul1-right{
+  float: right;
+  width: 40%;
+  height: 120px;
+  background-color:#e2e4e6;
+  border-radius: 8px;
 }
 
-#second{
- outline: 1px solid black;
-  width: 30%;
-  height: 100px;
-  margin-left: 20px;
+/*contenedor de las lista y tareas*/
+#second-container1{
+  width: 40%;
+  height: 120px;
+/*  margin-left: 20px;*/
   margin-top: 10px;
   border-radius: 10px;
-  background-color: white;
-display: none;
-
+  border: 1px solid #d76e00;
+  background-color: #e2e4e6;
+  display: block;
+  /*
+  padding-left: 10px;*/
+  margin-left: 50px;*/
 }
-
-#second1{
-  width: 30%;
-  height: 100px;
-  margin-left: 20px;
-  margin-top: 10px;
+/*contenedor del titulo*/
+.thrid-container1{
+  border: 8px solid #d76e00;
   border-radius: 10px;
-  background-color: white;
-  display: inline-block;
-}
-.title2{
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #e2e4e6;
 
 }
-
-#btn-list{
+/*boton añadir tarea */
+#btn-works{
+  /*no aparece el botón*/
   display: none;
 }
-
-#btn-list1{
+/*boton añadir tarea para que aparezaca*/
+#btn-works1{
   display: block;
-background-color: red;
+  background-color: #d76e00;
+  width: 100%;
+  text-decoration: underline;
+  padding: 5px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
 }
-.newText{
-  outline: 1px solid red;
+
+
+.new-works{
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 80%;
+
 }
+
 
 #formulario{
   display: none;
 }
 #formulario1{
   display: block;
+
+}
+
+.boxnew{
 
 }

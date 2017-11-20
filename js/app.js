@@ -1,50 +1,63 @@
 
 window.addEventListener('load',function(){
-  var addList = document.getElementById('entrada');
+  var addList = document.getElementById('input-list');
   var formul = document.getElementById('formul');
   var saveButton = document.getElementById('save-button');
-  var container = document.getElementById('second');
-  var cont = document.querySelector('.cont');
+  var container = document.getElementById('second-container');
+  var cont = document.querySelector('.thrid-container');
   var newform = document.getElementById('formul-list');
-var btn = document.getElementById('btn-list');
+var btn = document.getElementById('btn-works');
 var formulario= document.getElementById('formulario');
-var box = document.querySelector('.boxnew');
+var box = document.querySelector('.box-works');
 var añadir = document.getElementById('añadir');
+var nuevo = document.getElementById('newtext');
 
   /*llamando al evento click para añdir el formulario*/
   addList.addEventListener('click', enterForm);
   function enterForm(){
     /*llamando a ocultar el primer boton*/
     /*button.style.display="none";*/
-    addList.classList.add('enter');
+    addList.classList.add('input-list');
   /*aparece el formulario*/
   formul.classList.add('formul1');
   }
   saveButton.addEventListener('click', createTitle);
   function createTitle(){
-   formul.classList.toggle('formul2');
-   container.setAttribute('id','second1');
+   formul.classList.toggle('formul1-right');
+
+
+   container.setAttribute('id','second-container1');
+
+
    /*container.style.display="block";*/
-   var titleBox = document.getElementById('title-box').value;
-   document.getElementById('title-box').value= " ";
+   var titleBox = document.getElementById('title-list').value;
+   document.getElementById('title-list').value= " ";
    var element = document.createElement("div");
    element.innerHTML = titleBox;
    cont.appendChild(element);
-   btn.setAttribute('id','btn-list1');
+   cont.insertBefore(element,formulario);
+  cont.setAttribute('class','thrid-container1');
+   btn.setAttribute('id','btn-works1');
  }
 
 btn.addEventListener('click', validation);
 function validation(){
-  btn.setAttribute('id','btn-list');
+  btn.setAttribute('id','btn-works');
+
   formulario.removeAttribute('id','formulario');
 
 }
+
+
 añadir.addEventListener('click', newtextos);
 function newtextos(){
 var myText = document.getElementById('entrada1').value;
 var newText= document.createElement('div');
+newText.setAttribute('class','new-works');
 newText.innerHTML = myText;
-box.appendChild(newText);}
+cont.appendChild(newText);
+cont.insertBefore(newText,formulario);
+}
 /*
    var titleBox = document.getElementById('title-box').value;
    var element = document.createElement("div");
