@@ -1,111 +1,94 @@
 
 window.addEventListener('load',function(){
+  /*variable para el ingreso de la lista*/
   var addList = document.getElementById('input-list');
+  /*variable para el primer formulario*/
   var formul = document.getElementById('formul');
+  /*variable para el boton */
   var saveButton = document.getElementById('save-button');
+  /*contenedor del primer formulario*/
   var container = document.getElementById('second-container');
-  var cont = document.querySelector('.thrid-container');
-  var newform = document.getElementById('formul-list');
-var btn = document.getElementById('btn-works');
-var formulario= document.getElementById('formulario');
-var box = document.querySelector('.box-works');
-var añadir = document.getElementById('añadir');
-var nuevo = document.getElementById('newtext');
+  /*contenedor de las tareas y el titulo*/
+  var containerWorks = document.querySelector('.thrid-container');
+  /*botón añadir tareas*/
+  var btnWorks = document.getElementById('btn-works');
+  /*segundo formulario*/
+  var secondFormul= document.getElementById('formulario');
+  /*contenedor de las tareas*/
+  var box = document.querySelector('.box-works');
+  /*botón añadir*/
+  var btnAdd = document.getElementById('add');
 
-  /*llamando al evento click para añdir el formulario*/
+  /*llamando al evento click en el boton añadir lista*/
   addList.addEventListener('click', enterForm);
+  /*funcion para ingresar al primer formulario*/
   function enterForm(){
-    /*llamando a ocultar el primer boton*/
-    /*button.style.display="none";*/
+    /*llamando a ocultar el primer boton añadir lista*/
     addList.classList.add('input-list');
-  /*aparece el formulario*/
-  formul.classList.add('formul1');
+    /*aparece el primer formulario*/
+    formul.classList.add('formul1');
   }
+
+  /*llamando al evento click en el boton guardar*/
   saveButton.addEventListener('click', createTitle);
+  /*funcion para crear el titulo de la lista*/
   function createTitle(){
+    /*el primer formulario aparece en el lado derecho*/
    formul.classList.toggle('formul1-right');
-
-
+   /*se le agrega estilos al nuevo contenedor del titulo y tareas*/
    container.setAttribute('id','second-container1');
-
-
-   /*container.style.display="block";*/
+   /*tomando los datos para ingresar el titulo*/
    var titleBox = document.getElementById('title-list').value;
+   /*vaciando el ingreso del titulo*/
    document.getElementById('title-list').value= " ";
+   /*creando otro elemento para el titulo*/
    var element = document.createElement("div");
+   /*incoporando el titulo en dicho elemento*/
    element.innerHTML = titleBox;
-   cont.appendChild(element);
-   cont.insertBefore(element,formulario);
-  cont.setAttribute('class','thrid-container1');
-   btn.setAttribute('id','btn-works1');
+   /*incorporando el elemento en el nuevo contenedor*/
+   containerWorks.appendChild(element);
+   /*insertandolo antes del segundo formulario*/
+   containerWorks.insertBefore(element,secondFormul);
+   /*incorporando estilos para el contenedor de las tareas*/
+   containerWorks.setAttribute('class','thrid-container1');
+   /*incoporando estilos para que aparezca el boton añadir tarea*/
+   btnWorks.setAttribute('id','btn-works1');
  }
 
-btn.addEventListener('click', validation);
-function validation(){
-  btn.setAttribute('id','btn-works');
+ /*llamando al evento click en el boton añadir tarea */
+ btnWorks.addEventListener('click', addWorks);
+ /*funcion para añadir tareas*/
+ function addWorks(){
+   /*incorporando estilo para que desaparezca el boton añadir tareas*/
+   btnWorks.setAttribute('id','btn-works');
+   /*removiendo el estilo para que aparezca el formulario con el boton añadir */
+   secondFormul.removeAttribute('id','formulario');
+ }
 
-  formulario.removeAttribute('id','formulario');
+ /*llamando al evento click en el boton añadir*/
+ btnAdd.addEventListener('click', newWorks);
+ /*funcion para añadir nuevas tareas*/
+ function newWorks(){
+   /*recogiendo datos ingresados en el texarea*/
+   var myText = document.getElementById('entrada1').value;
+   /*limpiando el texarea cuando ya se ingresa un dato*/
+   document.getElementById('entrada1').value = "";
+   /*creando un elemeneto para la nuevas tareas*/
+   var newText= document.createElement('div');
+   if (myText === 0 || myText === null) {
+      /* desabilitando el botón tweet*/
+       btnAdd.disabled = true;
+    }else{
 
+   /*incorporando estilos a las nuevas tareas*/
+   newText.setAttribute('class','new-works');
+   /*añadiendo el texto ingresado al elemento*/
+   newText.innerHTML = myText;
+  /*incorporando el elemento en el contenedor*/
+   containerWorks.appendChild(newText);
+   /*incorporando antes del texarea y el boton añadir*/
+   containerWorks.insertBefore(newText,secondFormul);
+ }
 }
 
-
-añadir.addEventListener('click', newtextos);
-function newtextos(){
-var myText = document.getElementById('entrada1').value;
-var newText= document.createElement('div');
-newText.setAttribute('class','new-works');
-newText.innerHTML = myText;
-cont.appendChild(newText);
-cont.insertBefore(newText,formulario);
-}
-/*
-   var titleBox = document.getElementById('title-box').value;
-   var element = document.createElement("div");
-   element.classList.add('title2');
-   element.innerHTML = titleBox;
-   container.style.display= "inline-block"
-   container.classList.add('second');
-   container.appendChild(element);*/
-
-
-
-   /*
-   buton2.addEventListener('click',function(event){
-     button2.style.display='none';
-   })*/
-
-   /*
-   buton2.innerHTML="Añadir una tarea";
-
-
-   container.appendChild(buton2);
-   button2.classList.add('button2')*/
-/*
-   var container = document.getElementById('second')
-    var titleBox = document.getElementById('title-box').value;
-    var element = document.createElement("div");
-    console.log(element);
-    element.innerHTML = titleBox;
-    container.style.display= "inline-block"
-    container.appendChild(element);
-*/
-
-
-
-
-  /*
-  var formul = document.getElementById('formul');
-  formul.addEventListener('click', aparecer);
-  function aparecer(){
-    button.classList.toggle('enter');
-  }*/
 })
-/*
-window.addEventListener('load',function(){
-  button.addEventListener('click',enterForm);
-
-})
-var button = document.getElementById('entrada');
-function enterForm(){
-button.style.display="none";
-}*/

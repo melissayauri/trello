@@ -112,6 +112,7 @@ main{
   width: 60%;
   background-color: rgba(34,34,34,0.2);
   margin-left: 50px;
+  overflow: auto;
 }
 
 /*estilo a la entrada del texto*/
@@ -195,7 +196,7 @@ display: none;
 /*contenedor del titulo*/
 .thrid-container1{
   border: 8px solid #d76e00;
-  border-radius: 10px;
+
   padding: 10px;
   font-weight: bolder;
   font-size: 20px;
@@ -220,7 +221,7 @@ display: none;
   margin-top: 10px;
 }
 
-
+/*nuevos texto*/
 .new-works{
   border: 5px solid white;
   border-radius: 10px;
@@ -235,9 +236,5 @@ display: none;
 }
 #formulario1{
   display: block;
-
-}
-
-.boxnew{
 
 }
