@@ -2,17 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  font-family: 'Dancing Script', cursive;
 }
-
+/*encabezado*/
 header{
   text-align: center;
-  height: 50px;
-  background-color:#d76e00;
-
+  height: 60px;
+  /*color de fondo*/
+  background-color:rgb(225,137,38);
+  overflow: auto;
 }
 
-
+/*contenedor de los iconos*/
 header .box{
   /*outline: 1px solid red;*/
   height: 30px;
@@ -21,36 +22,80 @@ header .box{
   margin-top: 10px;
   margin-left: 10px;
   font-size: 10px;
-  background-color: #fe8a1e;
+  background-color: #eba47a;
   border-radius: 5px;
+}
+/*cuando se posiciona el cursor se cambia el fondo*/
+.box:hover{
+  background-color: #fc8000;
+}
+/*eliminando el subrayado*/
+a{
+  text-decoration: none;
+}
+/*icono tablero*/
+.box a{
   color: white;
-
+  font-size: 20px;
 }
 
+/*icono buscar*/
 #search{
   font-size: 15px;
   margin-top: 8px;
   margin-left: 100px;
+  color: white;
 }
 
-.trello{
-  height: 30px;
+/*titulo trello*/
+.trello a{
+  /*outline: 1px solid red;*/
+  height: 50px;
   width: 10%;
-  color:#80b4d3;
+  text-decoration:none;
+  color:#eba47a;
   float: left;
   margin-top: 10px;
-margin-left: 300px;
+  margin-left: 300px;
+  font-size: 35px;
 }
+.trello a:hover{
+  color:white;
+}
+.box-icons{
+/* outline: 1px solid red;*/
+  margin-left: 50px;
+  width: 30%;
+  float: right;
+}
+/*contendeor de la caja de iconos crear, información y notificaciones*/
 .box-icons i{
-  background-color: #fe8a1e;
+  background-color: #eba47a;
   padding: 10px;
   color: white;
   margin-top: 10px;
+  margin-left: 10px;
+
+}
+/*efecto cuando el cursor pasa sobre los iconos*/
+.box-icons i:hover{
+  /*fondo cambia */
+  background-color:#fc8000;
+}
+/*imagen en el encabezado*/
+img{
+  height: 40px;
+  width: 40px;
+  margin-bottom: -15px;
 }
 
 main{
-  background-color: #fe8a1e;
-  height: 900px;
+/*  background-color: #fe8a1e;*/
+/*background: linear-gradient(#fe8100, #ffb154);*/
+  background-image:url(../assets/images/fondo4.jpg);
+background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
   outline: 1px solid red;
 }
 
@@ -164,5 +209,5 @@ background-color: red;
 }
 #formulario1{
   display: block;
-  
+
 }
