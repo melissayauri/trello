@@ -110,7 +110,7 @@ main{
   /*outline: 1px solid blue;*/
   height: 600px;
   width: 60%;
-  background-color: rgba(34,34,34,0.2);
+/*  background-color: rgba(34,34,34,0.2);*/
   margin-left: 50px;
   overflow: auto;
 }
@@ -229,12 +229,26 @@ display: none;
   width: 80%;
 
 }
-
-
 #formulario{
   display: none;
 }
 #formulario1{
   display: block;
+}
+/*estilo para el evento focus*/
+.input-works{
+  background-color: rgba(225,137,38,0.2);
+  font-size: 20px;
+  width: 80%;
+  margin-top: 10px;
+}
 
+#add{
+  background-color: #d76e00;
+  border: 3px solid white;
+  color:white;
+  padding: 7px;
+  border-radius: 5px;
+  margin-top: 7px;
+  font-size: 16px;
 }
